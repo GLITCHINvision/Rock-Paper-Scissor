@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Rock-Paper-Scissor</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="game-section">
+      <div class="rock-button-section js-rock-button">
+        <button class="rock-button"><span class="rock-icon">&#9994;</span></button>
+        <p class="name">Rock</p>
+      </div>
+
+      <div class="paper-button-section js-paper-button">
+        <button class="paper-button"><span class="paper-icon">&#9995;</span></button>
+        <p class="name">Paper</p>
+      </div>
+
+      <div class="scissor-button-section js-scissor-button">
+        <button class="scissor-button"><span class="scissor-icon">&#9996;</span></button>
+        <p class="name">Scissor</p>
+      </div>
+    </div>
+
+    <div class="score-section">
+      <div class="win-Section">
+        <span id="win-icon" class="win-icon">&#128525;</span>
+        <span id="win_score" class="score">0</span>
+      </div>
+      <div class="lose-Section">
+        <span id="lose-icon" class="lose-icon">&#128557;</span>
+        <span id="lose_score" class="score">0</span>
+      </div>
+      <div class="tie-Section">
+        <span id="tie-icon" class="tie-icon">&#128556;</span>
+        <span id="tie_score" class="score">0</span>
+      </div>
+    </div>
+
+    <div class="compare-section">
+      <div id="user-section" class="user-section">
+        <span class="user-move">You</span>
+        <span id="user-icon" class="user-icon">&#9994;</span>
+      </div>
+      <div id="result-section" class="result-section">v/s</div>
+      <div class="computer-section">
+        <span id="computer-icon" class="computer-icon">&#9994;</span>
+        <span class="computer-move">Robo</span>
+      </div>
+    </div>
+
+    <div class="reset-section">
+      <button class="score-reset-button js-score-reset-button">
+        <span id="reset_score" class="reset-icon">&#8987;</span>
+      </button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
